@@ -7,10 +7,12 @@ public class Account {
     }
 
     public int getBalance() {
-        return balance;
+        return this.balance;
     }
 
-    public void setBalance(int val) { // FIXME: 23-10-2019 Cannot go below 0!!
+    public void addBalance(int val) { // FIXME: 23-10-2019 Cannot go below 0!!
         this.balance += val;
     }
+
+
 }

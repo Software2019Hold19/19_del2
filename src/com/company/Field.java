@@ -7,10 +7,12 @@ public class Field {
 
     //Constructor
     public Field(String _name, int _val, boolean _extra){
-        name = _name;
-        val = _val;
-        extra = _extra;
+        this.name = _name;
+        this.val = _val;
+        this.extra = _extra;
     }
+
+    // FIXME: 25-10-2019 Make "get info" method which returns all info from the Field
 
 
 }
