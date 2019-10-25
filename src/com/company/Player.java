@@ -10,9 +10,9 @@ public class Player {
         Die die2 = new Die(dieSize);
     }
     
-    public int[] roll(){ // FIXME: 25-10-2019 Make this use the 2 Die objects to roll 2 random numbers between 1 and dieSize
+    /*public int[] roll(){ // FIXME: 25-10-2019 Make this use the 2 Die objects to roll 2 random numbers between 1 and dieSize
         
         return ([1, 2])
-    }
+    }*/
 
 }

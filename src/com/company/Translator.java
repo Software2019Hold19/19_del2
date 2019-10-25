@@ -9,7 +9,7 @@ public class Translator {
         getLanguage(language);
     }
 
-    private void getLanguage(String language){
+    private void getLanguage(String language){ // FIXME: 25-10-2019 Will get info on how to do dis on Monday
 
     }
 }

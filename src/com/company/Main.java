@@ -3,8 +3,8 @@ package com.company;
 public class Main {
 
     private static void playerTurn(Player player, Field[] fieldList){
-        int[] roll = player.roll();
-        int sum = roll[0] + roll[1];
+       // int[] roll = player.roll();
+        //int sum = roll[0] + roll[1];
         //info = fieldList[sum - 1].getInfo
 
 
@@ -15,7 +15,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-	    Field[] fieldList;
-	    
+	    //Field[] fieldList;
+        //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
     }
 }
