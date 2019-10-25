@@ -4,7 +4,7 @@ public class Translator {
     String language;
 
     public Translator(String _language){
-        language = _language;
+        this.language = _language;
 
         getLanguage(language);
     }
