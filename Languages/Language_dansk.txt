@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+Bjerghytterne: En spirituel guru i bjergene lærer dig sandheden. Du stjæler hans guldscepter og sælger det for 60 mønter.%
+Varulvemuren: Du møder nogle hylende varulve. Du er tvunget til at smide hvad du har i hænderne og vende om. Du mister 80 mønter, men får en ekstra tur.%
+Hullet: Du falder i et stort hul. Et regnskyl fylder hullet med vand så du endelig kommer op. Dog er dine sko ødelagte, så du køber nye for 50 mønter.%
+Guldminen: En masse minearbejdere er faldet i søvn på jobbet. Du tager alt det guld du kan holde og løber. Yeehaw, 650 mønter!%
+Velkommen. Reglerne er simple. Den første, som opnår 3000 mønter på sin rejse, vinder. Man starter med 1000 mønter.%
+Indtast navn på spiller 1.%
+Indtast antal sider på terningerne.%
+Indtast navn på spiller 2.%
+
+
