@@ -9,10 +9,13 @@ public class Main {
 
 
     }
+    
+    private static void startGame(){ // FIXME: 25-10-2019 init players, fields and GUI
+        
+    }
 
     public static void main(String[] args) {
-	// write your code here
-
-        Field[] fieldList;
+	    Field[] fieldList;
+	    
     }
 }
