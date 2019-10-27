@@ -1,5 +1,6 @@
 package com.company;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -48,6 +49,37 @@ public class GUI {
     {
         board.getFields()[fieldNumber].setCar(player.guiPlayerObj, true);
     }
+
+    public void setFieldText(int fieldNumber, String txt)
+    {
+        board.getFields()[fieldNumber].setSubText(txt);
+    }
+
+    public void setFieldTitle(int fieldNumber, String txt)
+    {
+        board.getFields()[fieldNumber].setTitle(txt);
+    }
+
+    public void setFieldDescription(int fieldNumber, String txt)
+    {
+        board.getFields()[fieldNumber].setDescription(txt);
+    }
+
+ //   public void setBackgroundColor(int fieldNumber, String txt)
+ //   {
+ //       board.getFields()[fieldNumber].setBackGroundColor(Color.getColor(""));
+ //   }
+
+    public String getPlayerDropbown(String txt)
+    {
+        return board.getUserSelection(txt,"vælg");
+    }
+
+    //Methods to use with gui user input and msg
+    // board.getUserString(String)
+    //      .getUserButtonPressed(java.lang.String msg, java.lang.String... buttons)
+    //      .board.getUserSelection(java.lang.String msg, java.lang.String... options);
+    //      .showMessage(java.lang.String msg)
 
 
 }
