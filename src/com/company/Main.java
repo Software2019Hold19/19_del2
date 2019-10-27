@@ -1,5 +1,6 @@
 package com.company;
 
+
 public class Main {
 
     private static void playerTurn(Player player, Field[] fieldList){
@@ -11,11 +12,17 @@ public class Main {
     }
     
     private static void startGame(){ // FIXME: 25-10-2019 init players, fields and GUI
-        
+        GUI board = new GUI();
+        Player p = new Player("Oliver", 6);
+        board.setDice(1,2);
+        board.addPlayerToBoard(p);
+        board.moveCar(5, p);
     }
 
     public static void main(String[] args) {
 	    //Field[] fieldList;
         //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
+        startGame();
+
     }
 }
