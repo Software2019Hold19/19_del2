@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Translator {
     String language;
-    ArrayList<String> txts = new ArrayList<String>(17);
+    ArrayList<String> txts = new ArrayList<String>(18);
 
     public Translator(String _language){
         this.language = _language;
