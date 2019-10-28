@@ -10,9 +10,8 @@ public class Account {
         return this.balance;
     }
 
-    public void addBalance(int val) { // FIXME: 23-10-2019 Cannot go below 0!!
+    public void addBalance(int val){
         this.balance += val;
+        if(this.balance < 0){ this.balance = 0; }
     }
-
-
 }
