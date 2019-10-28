@@ -6,7 +6,7 @@ public class Translator {
     String fileDansk = "Language_dansk.txt";
     String fileEngelsk = "Language_english.txt";
     String language;
-    ArrayList<String> txts = new ArrayList<String>(17);
+    ArrayList<String> txts = new ArrayList<String>(18);
 
     public Translator(String _language){
         this.language = _language;

@@ -14,7 +14,4 @@ public class Field {
         this.extra = _extra;
     }
 
-    // FIXME: 25-10-2019 Make "get info" method which returns all info from the Field
-
-
 }

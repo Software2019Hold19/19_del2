@@ -86,4 +86,8 @@ public class GUI {
         board.showMessage(txt);
     }
 
+    public String getUserString(String msg) {
+        return board.getUserString(msg);
+    }
+
 }
