@@ -1,10 +1,10 @@
 Tower: The princess, who was trapped at the top of the tower, gives you 250 coins to free her.
 Crater: There is a large crater in your path. You pay 100 coins to use the bridge instead of climbing.
-Palace gates: The a package outside the palace gates. You grab it and run. It contains 100 coins!
-Cold desert: The desert you find yourself in is very cold at night. You're forced to buy a fur coat fro 20 coins.
+Palace gates: There is a package outside the palace gates. You grab it and run. It contains 100 coins!
+Cold desert: The desert you find yourself in is very cold at night. You're forced to buy a fur coat for 20 coins.
 Walled city: You meet a bunch of your biggest fans inside the city. You are gifted 180 coins for your journey.
 Monestary: In a monestary you meet a wise old man. He teaches your about sacred life, but he has no money so you move on.
-Black cave: You seek shelter in a black cave. You have to pay 70 coins to the dragon who lives there for the stay.
+Black cave: You seek shelter in a black cave. You have to pay 70 coins to the dragon who lives there \nfor the stay.
 Huts in the mountain: A spiritual guru living in the mountains teaches you the truth. Anyways, you steal his golden scepter and sell for 60 coins.
 Werewall: You meet a pack of howling werewolves. You're forced to drop whatever you're holding and turn around. You lose 80 coins but you get another turn.
 The pit: You fall into a huge pit. A storm fills up the pit with rainwater allowing you to escape. Your shoes are ruined though, so you buy new ones for 50 coins.
