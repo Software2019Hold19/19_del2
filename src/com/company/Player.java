@@ -4,15 +4,15 @@ import gui_fields.GUI_Player;
 
 public class Player {
     String name;
-    Account acc = new Account();
+    public Account acc = new Account();
 
     //Oliver To use in GUI
     GUI_Player guiPlayerObj;
 
-    public Player (String name, int dieSize){
+    public Player (String name){
         this.name = name;
-        Die die1 = new Die(dieSize);
-        Die die2 = new Die(dieSize);
+        Die die1 = new Die();
+        Die die2 = new Die();
 
         // Oliver To use in GUI
         this.guiPlayerObj = new GUI_Player(this.name);
@@ -30,4 +30,9 @@ public class Player {
         return (res);
     }
 
+    public int getBalance(){ return acc.getBalance(); }
+
+    public void setBalance(int val){
+        acc.addBalance(val);
+    }
 }
