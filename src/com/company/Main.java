@@ -27,6 +27,7 @@ public class Main {
     }
 
     private static void playerTurn(Player player, Field[] fieldList, Translator translator){
+        board.showMessage(String.format(translator.txts.get(15), player.name));
         int[] roll = player.roll();
         int sum = roll[0] + roll[1];
         int field = sum - 2;
@@ -34,13 +35,16 @@ public class Main {
         int val = fieldList[field].val;
         boolean extra = fieldList[field].extra;
 
-        player.acc.addBalance(val);
+        player.acc.addBalance(val); //updates balance i players Account object
+        player.getGuiPlayerObj().setBalance(player.acc.getBalance()); //updating the balance of the players GUI_Player object and updating it on the board
 
         board.setDice(roll[0], roll[1]);
 
         board.moveCar(sum, player);
-        board.showMessage(String.format(translator.txts.get(16), roll[0], roll[1], sum));// FIXME: 28-10-2019 GUI write txt
-
+        player.oldFieldNumber = sum;
+        board.showMessage(String.format(translator.txts.get(16), roll[0], roll[1], sum));
+        board.showMessage(String.format(translator.txts.get(field)));
+        
         winCheck(player);
 
         endTurn(extra);
@@ -62,10 +66,11 @@ public class Main {
     // Setup fields in GUI with selected language
     private static void initGame(Field[] fields) {
 
-        int count = 1;
+        int count = 2;
         for (Field f : fields) {
-            board.setFieldText(count, f.name);
+            board.setFieldTitle(count, f.name);
             board.setFieldText(count, "" + f.val);
+            board.setFieldDescription(count, f.txt);
             count++;
         }
 
@@ -74,14 +79,7 @@ public class Main {
     // Where the game starts
     private static void startGame(Player p1, Player p2, Field[] fields, Translator translator){ // FIXME: 25-10-2019 init players, fields and GUI
 
-  /*      Player p = new Player("Oliver", 6);
-        board.setDice(1,2);
-        board.addPlayerToBoard(p);
-        board.moveCar(5, p);
-        board.setFieldText(1,"true");
-   */
-       // board.getPlayerDropbown("ja");
-
+ 
         while (!hasWon) {
             if (isPlayer1) {
                 playerTurn(p1, fields, translator);
@@ -90,16 +88,20 @@ public class Main {
                 playerTurn(p2, fields, translator);
             }
         }
-
-        // FIXME: 28-10-2019 GUI write out player won if isPlayer1, the player1 won, else player2 won
-
+        
+        String winner;
+        if (isPlayer1){
+            winner = p1.name;
+        } else {
+            winner = p2.name;
+        }
+        board.showMessage(String.format(translator.txts.get(17), winner));
 
     }
 
     public static void main(String[] args) throws IOException {
 	    Field[] fieldList = new Field[11];
-	    //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
-
+        
         // Selected language from user
         String selectedL = board.getPlayerDropbown("Vælg Sprog / Choose Language", "Dansk", "English");
 
@@ -108,6 +110,8 @@ public class Main {
         initFieldList(fieldList, translator);
         initGame(fieldList);
 
+        board.showMessage(translator.txts.get(11));
+        
         // Init players
         Player player1 = new Player(board.getUserString(translator.txts.get(12)));
         Player player2 = new Player(board.getUserString(translator.txts.get(13)));
@@ -116,6 +120,8 @@ public class Main {
         board.addPlayerToBoard(player1);
         board.addPlayerToBoard(player2);
 
+        board.showMessage(String.format(translator.txts.get(14), player1.name, player2.name));
+        
         startGame(player1, player2, fieldList, translator);
     }
 }

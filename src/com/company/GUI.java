@@ -30,6 +30,8 @@ public class GUI {
     public void addPlayerToBoard(Player player)
     {
         board.addPlayer(player.getGuiPlayerObj());
+        board.getFields()[0].setCar(player.guiPlayerObj, true);
+
 
         /*
         int count = 0;
@@ -47,6 +49,7 @@ public class GUI {
 
     public void moveCar(int fieldNumber, Player player)
     {
+        board.getFields()[player.oldFieldNumber].setCar(player.guiPlayerObj, false);
         board.getFields()[fieldNumber].setCar(player.guiPlayerObj, true);
     }
 
