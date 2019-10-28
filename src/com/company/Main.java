@@ -65,7 +65,6 @@ public class Main {
 
 
 
-
     }
 
     public static void main(String[] args) {
@@ -83,9 +82,11 @@ public class Main {
         initFieldList(fieldList, translator);
         initGame(fieldList);
 
+        // Init players
         Player player1 = new Player(board.getUserString("Spiller 1 navn"));
         Player player2 = new Player(board.getUserString("Spiller 2 navn"));
 
+        // Adding players to playboard
         board.addPlayerToBoard(player1);
         board.addPlayerToBoard(player2);
 
