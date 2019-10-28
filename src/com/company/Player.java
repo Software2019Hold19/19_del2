@@ -4,7 +4,7 @@ import gui_fields.GUI_Player;
 
 public class Player {
     String name;
-    Account acc = new Account();
+    public Account acc = new Account();
 
     //Oliver To use in GUI
     GUI_Player guiPlayerObj;

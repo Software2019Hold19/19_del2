@@ -58,6 +58,8 @@ public class Main {
 
         //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
 
+        Player player = new Player("1",)
+        System.out.println();
 
         String selectedL = board.getPlayerDropbown("Vælg Sprog", "Dansk", "Engelsk");
 
