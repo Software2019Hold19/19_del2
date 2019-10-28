@@ -76,7 +76,7 @@ public class Main {
     }
 
     // Where the game starts
-    private static void startGame(Player p1, Player p2, Field[] fields, Translator translator){ // FIXME: 25-10-2019 init players, fields and GUI
+    private static void startGame(Player p1, Player p2, Field[] fields, Translator translator){
 
  
         while (!hasWon) {
@@ -113,7 +113,7 @@ public class Main {
         
         // Init players
         Player player1 = new Player(board.getUserString(translator.txts.get(12)));
-        Player player2 = new Player(board.getUserString(translator.txts.get(13)));
+        Player player2 = new Player(board.getUserString(translator.txts.get(13))); // FIXME: 28-10-2019 BUG!! if both players are named the same, it fucks up a big time..
 
         // Adding players to playboard
         board.addPlayerToBoard(player1);

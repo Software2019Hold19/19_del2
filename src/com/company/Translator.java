@@ -15,7 +15,7 @@ public class Translator {
         getLanguage(this.language);
     }
 
-    private void getLanguage(String language) throws IOException { // FIXME: 25-10-2019 Will get info on how to do dis on Monday
+    private void getLanguage(String language) throws IOException {
         String file ="Languages/Language_" + language.toLowerCase() + ".txt";
         BufferedReader reader = new BufferedReader(new FileReader(file));
 
