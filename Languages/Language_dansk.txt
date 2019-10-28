@@ -1,18 +1,18 @@
-Tårnet: Prinsessen fanget i toppen af tårnet giver dig 250 mønter for at befri hende.??
-Krateret: Du skal krydse et krater, som ligger i din vej. Du betaler 100 mønter for at benytte broen - nemt.??
-Paladsets porte: Du tager en GLS-pakke, som står foran paladsets porte. Den indeholdter 100 mønter!??
-Den kolde ørken: Ørkenen, som du er havnet i, er meget kold om natten. Du er tvunget til at købe en pels for 20 mønter, som kan holde dig varm.??
-Murens By: Du møder en masse fans i byen. Du får 180 mønter til din rejse.??
-Klosteret: I et kloster møder du en klog gammel mand. Han lærer dig mange ting om det hellige liv, men penge finder du ikke her, så du smutter videre.??
-Den sorte grotte: Du søger ly i grotten. Du må betale dragen, som bor der, 70 mønter for overnatningen.??
-Bjerghytterne: En spirituel guru i bjergene lærer dig sandheden. Du stjæler hans guldscepter og sælger det for 60 mønter.??
-Varulvemuren: Du møder nogle hylende varulve. Du er tvunget til at smide hvad du har i hænderne og vende om. Du mister 80 mønter, men får en ekstra tur??
-Hullet: Du falder i et stort hul. Et regnskyl fylder hullet med vand så du endelig kommer op. Dog er dine sko ødelagte, så du køber nye for 50 mønter.??
-Guldminen: En masse minearbejdere er faldet i søvn på jobbet. Du tager alt det guld du kan holde og løber. Yeehaw, 650 mønter!??
-Velkommen. Reglerne er simple. Den første, som opnår 3000 mønter på sin rejse, vinder. Man starter med 1000 mønter hver.??
-Indtast navn på spiller 1.??
-Indtast navn på spiller 2.??
-Velkommen til %s og %s. Held og lykke på rejsen.??
-Det er %ss tur. Kast med terningerne!??
-Du har slået %d og %d, så du rykker til felt %d.??
-%s har samlet 3000 mønter og vundet spillet. Tillykke!??
+Tårnet: Prinsessen fanget i toppen af tårnet giver dig 250 mønter for at befri hende.
+Krateret: Du skal krydse et krater, som ligger i din vej. Du betaler 100 mønter for at benytte broen - nemt.
+Paladsets porte: Du tager en GLS-pakke, som står foran paladsets porte. Den indeholdter 100 mønter!
+Den kolde ørken: Ørkenen, som du er havnet i, er meget kold om natten. Du er tvunget til at købe en pels for 20 mønter, som kan holde dig varm.
+Murens By: Du møder en masse fans i byen. Du får 180 mønter til din rejse.
+Klosteret: I et kloster møder du en klog gammel mand. Han lærer dig mange ting om det hellige liv, men penge finder du ikke her, så du smutter videre.
+Den sorte grotte: Du søger ly i grotten. Du må betale dragen, som bor der, 70 mønter for overnatningen.
+Bjerghytterne: En spirituel guru i bjergene lærer dig sandheden. Du stjæler hans guldscepter og sælger det for 60 mønter.
+Varulvemuren: Du møder nogle hylende varulve. Du er tvunget til at smide hvad du har i hænderne og vende om. Du mister 80 mønter, men får en ekstra tur
+Hullet: Du falder i et stort hul. Et regnskyl fylder hullet med vand så du endelig kommer op. Dog er dine sko ødelagte, så du køber nye for 50 mønter.
+Guldminen: En masse minearbejdere er faldet i søvn på jobbet. Du tager alt det guld du kan holde og løber. Yeehaw, 650 mønter!
+Velkommen. Reglerne er simple. Den første, som opnår 3000 mønter på sin rejse, vinder. Man starter med 1000 mønter hver.
+Indtast navn på spiller 1.
+Indtast navn på spiller 2.
+Velkommen til %s og %s. Held og lykke på rejsen.
+Det er %ss tur. Kast med terningerne!
+Du har slået %d og %d, så du rykker til felt %d.
+%s har samlet 3000 mønter og vundet spillet. Tillykke!
