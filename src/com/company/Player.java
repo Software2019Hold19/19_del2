@@ -23,10 +23,12 @@ public class Player {
         return this.guiPlayerObj;
     }
 
-    /*public int[] roll(){ // FIXME: 25-10-2019 Make this use the 2 Die objects to roll 2 random numbers between 1 and dieSize
-        
-        return ([1, 2])
-    }*/
+    public int[] roll(){ // FIXME: 25-10-2019 Make this use the 2 Die objects to roll 2 random numbers between 1 and dieSize
+
+        int[] res = new int[2];
+        res[0] = 1; res[1] = 2;
+        return (res);
+    }
 
     public int getBalance(){ return acc.getBalance(); }
 
