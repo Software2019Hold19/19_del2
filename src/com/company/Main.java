@@ -1,6 +1,8 @@
 package com.company;
 
 
+import java.io.IOException;
+
 public class Main {
 
     static GUI board = new GUI();
@@ -94,7 +96,7 @@ public class Main {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 	    Field[] fieldList = new Field[11];
 	    //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
 
