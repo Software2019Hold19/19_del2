@@ -99,7 +99,7 @@ public class Main {
 	    //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
 
         // Selected language from user
-        String selectedL = board.getPlayerDropbown("Vælg Sprog", "Dansk", "Engelsk");
+        String selectedL = board.getPlayerDropbown("Vælg Sprog", "Dansk", "English");
 
         //Setup translater with selected language
         Translator translator = new Translator(selectedL);
