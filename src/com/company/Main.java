@@ -4,10 +4,21 @@ package com.company;
 public class Main {
 
     private static void playerTurn(Player player, Field[] fieldList){
-       // int[] roll = player.roll();
-        //int sum = roll[0] + roll[1];
-        //info = fieldList[sum - 1].getInfo
+        int[] roll = player.roll();
+        int sum = roll[0] + roll[1];
+        int field = sum -1;
+        String txt = fieldList[field].txt;
+        int val = fieldList[field].val;
+        boolean extra = fieldList[field].extra;
 
+        player.acc.addBalance(val);
+
+        // FIXME: 28-10-2019 GUI set dice roll[0] & roll[1]
+        // FIXME: 28-10-2019 GUI write txt
+
+        // FIXME: 28-10-2019 Check win method
+
+        // FIXME: 28-10-2019 Check extra turn method
 
     }
     
@@ -24,8 +35,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-	    //Field[] fieldList;
-        //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
+	    Field[] fieldList = new Field[11];
+        System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
         startGame();
 
     }
