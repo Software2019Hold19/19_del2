@@ -6,6 +6,13 @@ public class Main {
     static GUI board = new GUI();
     static boolean isPlayer1 = true;
 
+    private static void endTurn(boolean extra){
+        isPlayer1 = !isPlayer1;
+        if (extra){
+            isPlayer1 = !isPlayer1;
+        }
+    }
+
     private static void playerTurn(Player player, Field[] fieldList){
         int[] roll = player.roll();
         int sum = roll[0] + roll[1];
@@ -16,7 +23,6 @@ public class Main {
 
         player.acc.addBalance(val);
 
-        // FIXME: 28-10-2019 GUI set dice roll[0] & roll[1]
         board.setDice(roll[0], roll[1]);
 
         // FIXME: 28-10-2019 GUI write txt
@@ -24,7 +30,7 @@ public class Main {
 
         // FIXME: 28-10-2019 Check win method
 
-        // FIXME: 28-10-2019 Check extra turn method
+        endTurn(extra);
 
     }
 
