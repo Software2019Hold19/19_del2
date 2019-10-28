@@ -9,10 +9,10 @@ public class Player {
     //Oliver To use in GUI
     GUI_Player guiPlayerObj;
 
-    public Player (String name, int dieSize){
+    public Player (String name){
         this.name = name;
-        Die die1 = new Die(dieSize);
-        Die die2 = new Die(dieSize);
+        Die die1 = new Die();
+        Die die2 = new Die();
 
         // Oliver To use in GUI
         this.guiPlayerObj = new GUI_Player(this.name);
