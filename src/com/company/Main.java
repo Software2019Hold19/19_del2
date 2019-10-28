@@ -5,6 +5,7 @@ public class Main {
 
     static GUI board = new GUI();
     static boolean isPlayer1 = true;
+    static boolean hasWon = false;
 
     private static void playerTurn(Player player, Field[] fieldList){
         int[] roll = player.roll();
@@ -20,6 +21,7 @@ public class Main {
         board.setDice(roll[0], roll[1]);
 
         // FIXME: 28-10-2019 GUI write txt
+        board.moveCar(sum+1,player);
         board.showMessage("Du har slået");
 
         // FIXME: 28-10-2019 Check win method
@@ -63,9 +65,12 @@ public class Main {
    */
        // board.getPlayerDropbown("ja");
 
-        while (true) {
+        while (!hasWon) {
             if (isPlayer1) {
-
+                playerTurn(p1, fields);
+            }
+            else {
+                playerTurn(p2, fields);
             }
         }
 
