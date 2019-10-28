@@ -26,7 +26,7 @@ public class Player {
         return this.guiPlayerObj;
     }
 
-    // FIXME: 25-10-2019 Make this use the 2 Die objects to roll 2 random numbers between 1 and dieSize
+
 
     public int[] roll(){
 
@@ -36,9 +36,4 @@ public class Player {
         return (res);
     }
 
-    public int getBalance(){ return acc.getBalance(); }
-
-    public void setBalance(int val){
-        acc.addBalance(val);
-    }
 }
