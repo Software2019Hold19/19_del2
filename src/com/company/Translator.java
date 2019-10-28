@@ -10,7 +10,7 @@ public class Translator {
     String language;
     ArrayList<String> txts = new ArrayList<String>(18);
 
-    public Translator(String _language){
+    public Translator(String _language) throws IOException {
         this.language = _language;
 
         getLanguage(language);
