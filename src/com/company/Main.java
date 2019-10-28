@@ -68,6 +68,5 @@ public class Main {
         initFieldList(fieldList);
         initGame(fieldList);
         startGame();
-
     }
 }
