@@ -7,10 +7,19 @@ public class Main {
     static boolean isPlayer1 = true;
     static boolean hasWon = false;
 
+    private static void winCheck(Player p){
+        if (p.acc.getBalance() >= 3000){
+            hasWon = true;
+        }
+    }
+
+    //ending turn and switching isPlayer1
     private static void endTurn(boolean extra){
-        isPlayer1 = !isPlayer1;
-        if (extra){
+        if (!hasWon) {
             isPlayer1 = !isPlayer1;
+            if (extra) { //if player is getting an extra turn, isPlayer Switches again
+                isPlayer1 = !isPlayer1;
+            }
         }
     }
 
@@ -26,11 +35,10 @@ public class Main {
 
         board.setDice(roll[0], roll[1]);
 
-        // FIXME: 28-10-2019 GUI write txt
-        board.moveCar(sum+1,player);
-        board.showMessage("Du har slået");
+        board.moveCar(sum, player);
+        board.showMessage("Du har slået");// FIXME: 28-10-2019 GUI write txt
 
-        // FIXME: 28-10-2019 Check win method
+        winCheck(player);
 
         endTurn(extra);
 
