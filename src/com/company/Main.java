@@ -5,6 +5,7 @@ public class Main {
 
     static GUI board = new GUI();
     static boolean isPlayer1 = true;
+    static boolean hasWon = false;
 
     private static void playerTurn(Player player, Field[] fieldList){
         int[] roll = player.roll();
@@ -64,7 +65,7 @@ public class Main {
    */
        // board.getPlayerDropbown("ja");
 
-        while (true) {
+        while (!hasWon) {
             if (isPlayer1) {
                 playerTurn(p1, fields);
             }
