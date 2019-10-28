@@ -1,7 +1,10 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Translator {
     String language;
+    ArrayList<String> txts = new ArrayList<String>(17);
 
     public Translator(String _language){
         this.language = _language;
