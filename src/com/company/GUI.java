@@ -81,5 +81,9 @@ public class GUI {
     //      .board.getUserSelection(java.lang.String msg, java.lang.String... options);
     //      .showMessage(java.lang.String msg)
 
+    public void showMessage(String txt)
+    {
+        board.showMessage(txt);
+    }
 
 }

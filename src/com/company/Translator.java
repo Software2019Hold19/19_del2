@@ -1,9 +1,12 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Translator {
     String fileDansk = "Language_dansk.txt";
     String fileEngelsk = "Language_english.txt";
     String language;
+    ArrayList<String> txts = new ArrayList<String>(17);
 
     public Translator(String _language){
         this.language = _language;

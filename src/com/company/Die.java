@@ -3,16 +3,10 @@ import java.util.Random;
 
 public class Die {
 
-    private int sides;
+    private int sides = 6;
     private int faceValue;
 
-    public Die(int _sides){     //constructor
-        if(_sides > 0){
-            this.sides = _sides;
-        }
-        else{
-            this.sides = 6;     //sætter til standard 6 sider - evt. print fejlmeddelelse for ugyldigt input
-        }
+    public Die(){     //constructor
     }
 
     public int roll(){
