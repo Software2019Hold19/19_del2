@@ -20,6 +20,7 @@ public class Main {
         board.setDice(roll[0], roll[1]);
 
         // FIXME: 28-10-2019 GUI write txt
+        board.moveCar(sum+1,player);
         board.showMessage("Du har slået");
 
         // FIXME: 28-10-2019 Check win method
@@ -65,7 +66,10 @@ public class Main {
 
         while (true) {
             if (isPlayer1) {
-
+                playerTurn(p1, fields);
+            }
+            else {
+                playerTurn(p2, fields);
             }
         }
 
