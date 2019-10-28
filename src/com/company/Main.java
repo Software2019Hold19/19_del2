@@ -4,6 +4,7 @@ package com.company;
 public class Main {
 
     static GUI board = new GUI();
+    static boolean isPlayer1 = true;
 
     private static void playerTurn(Player player, Field[] fieldList){
         int[] roll = player.roll();
@@ -62,6 +63,11 @@ public class Main {
    */
        // board.getPlayerDropbown("ja");
 
+        while (true) {
+            if (isPlayer1) {
+
+            }
+        }
 
 
 
