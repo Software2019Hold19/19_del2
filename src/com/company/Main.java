@@ -21,7 +21,6 @@ public class Main {
             isPlayer1 = !isPlayer1;
             if (extra) { //if player is getting an extra turn, isPlayer Switches again
                 isPlayer1 = !isPlayer1;
-                // FIXME: 28-10-2019 gui write out player gets extra turn.
             }
         }
     }
