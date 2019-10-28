@@ -8,7 +8,7 @@ public class Main {
     private static void playerTurn(Player player, Field[] fieldList){
         int[] roll = player.roll();
         int sum = roll[0] + roll[1];
-        int field = sum -1;
+        int field = sum - 1;
         String txt = fieldList[field].txt;
         int val = fieldList[field].val;
         boolean extra = fieldList[field].extra;
@@ -22,6 +22,12 @@ public class Main {
 
         // FIXME: 28-10-2019 Check extra turn method
 
+    }
+
+    private static void initFieldList(Field[] fields){
+        for (int i = 0; i < 11; i++){
+
+        }
     }
 
     private static void initGame(Field[] fields) {
@@ -59,7 +65,7 @@ public class Main {
             System.out.println("Dansk");
         else
             System.out.println("Ikke dansk");
-
+        initFieldList(fieldList);
         initGame(fieldList);
         startGame();
 
