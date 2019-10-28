@@ -19,6 +19,7 @@ public class Main {
             isPlayer1 = !isPlayer1;
             if (extra) { //if player is getting an extra turn, isPlayer Switches again
                 isPlayer1 = !isPlayer1;
+                // FIXME: 28-10-2019 gui write out player gets extra turn.
             }
         }
     }
@@ -88,6 +89,7 @@ public class Main {
             }
         }
 
+        // FIXME: 28-10-2019 GUI write out player won if isPlayer1, the player1 won, else player2 won
 
 
     }
