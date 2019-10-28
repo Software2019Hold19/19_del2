@@ -77,9 +77,6 @@ public class Main {
 	    Field[] fieldList = new Field[11];
 	    //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
 
-        Player player = new Player("1");
-        System.out.println(player.acc.getBalance());
-
         // Selected language from user
         String selectedL = board.getPlayerDropbown("Vælg Sprog", "Dansk", "Engelsk");
 
