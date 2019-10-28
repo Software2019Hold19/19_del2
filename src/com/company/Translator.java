@@ -16,7 +16,7 @@ public class Translator {
     }
 
     private void getLanguage(String language) throws FileNotFoundException { // FIXME: 25-10-2019 Will get info on how to do dis on Monday
-        String file ="minFil.txt";
+        String file ="Languages/";
         BufferedReader reader = new BufferedReader(new FileReader(file));
 
         String line;
