@@ -16,7 +16,10 @@ public class Main {
         player.acc.addBalance(val);
 
         // FIXME: 28-10-2019 GUI set dice roll[0] & roll[1]
+        board.setDice(roll[0], roll[1]);
+
         // FIXME: 28-10-2019 GUI write txt
+        board.showMessage("Du har slået");
 
         // FIXME: 28-10-2019 Check win method
 
