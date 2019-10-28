@@ -8,7 +8,7 @@ public class Main {
     private static void playerTurn(Player player, Field[] fieldList){
         int[] roll = player.roll();
         int sum = roll[0] + roll[1];
-        int field = sum - 1;
+        int field = sum - 2;
         String txt = fieldList[field].txt;
         int val = fieldList[field].val;
         boolean extra = fieldList[field].extra;
