@@ -28,4 +28,9 @@ public class Player {
         return ([1, 2])
     }*/
 
+    public int getBalance(){ return acc.getBalance(); }
+
+    public void setBalance(int val){
+        acc.addBalance(val);
+    }
 }
