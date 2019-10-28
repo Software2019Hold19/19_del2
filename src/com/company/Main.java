@@ -26,7 +26,7 @@ public class Main {
         }
     }
 
-    private static void playerTurn(Player player, Field[] fieldList){
+    private static void playerTurn(Player player, Field[] fieldList, Translator translator){
         int[] roll = player.roll();
         int sum = roll[0] + roll[1];
         int field = sum - 2;
@@ -39,7 +39,7 @@ public class Main {
         board.setDice(roll[0], roll[1]);
 
         board.moveCar(sum, player);
-        board.showMessage("Du har slået");// FIXME: 28-10-2019 GUI write txt
+        board.showMessage(String.format(translator.txts.get(16), roll[0], roll[1], sum));// FIXME: 28-10-2019 GUI write txt
 
         winCheck(player);
 
@@ -72,7 +72,7 @@ public class Main {
     }
 
     // Where the game starts
-    private static void startGame(Player p1, Player p2, Field[] fields){ // FIXME: 25-10-2019 init players, fields and GUI
+    private static void startGame(Player p1, Player p2, Field[] fields, Translator translator){ // FIXME: 25-10-2019 init players, fields and GUI
 
   /*      Player p = new Player("Oliver", 6);
         board.setDice(1,2);
@@ -84,10 +84,10 @@ public class Main {
 
         while (!hasWon) {
             if (isPlayer1) {
-                playerTurn(p1, fields);
+                playerTurn(p1, fields, translator);
             }
             else {
-                playerTurn(p2, fields);
+                playerTurn(p2, fields, translator);
             }
         }
 
@@ -109,13 +109,13 @@ public class Main {
         initGame(fieldList);
 
         // Init players
-        Player player1 = new Player(board.getUserString("Spiller 1 navn"));
-        Player player2 = new Player(board.getUserString("Spiller 2 navn"));
+        Player player1 = new Player(board.getUserString(translator.txts.get(12)));
+        Player player2 = new Player(board.getUserString(translator.txts.get(13)));
 
         // Adding players to playboard
         board.addPlayerToBoard(player1);
         board.addPlayerToBoard(player2);
 
-        startGame(player1, player2, fieldList);
+        startGame(player1, player2, fieldList, translator);
     }
 }
