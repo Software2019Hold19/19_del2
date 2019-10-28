@@ -70,9 +70,9 @@ public class GUI {
  //       board.getFields()[fieldNumber].setBackGroundColor(Color.getColor(""));
  //   }
 
-    public String getPlayerDropbown(String txt)
+    public String getPlayerDropbown(java.lang.String msg, java.lang.String... buttons)
     {
-        return board.getUserSelection(txt,"vælg");
+        return board.getUserSelection(msg,buttons);
     }
 
     //Methods to use with gui user input and msg

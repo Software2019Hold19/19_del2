@@ -21,6 +21,7 @@ public class Main {
             board.setFieldText(count, "" + f.val);
             count++;
         }
+
     }
 
     private static void startGame(){ // FIXME: 25-10-2019 init players, fields and GUI
@@ -36,10 +37,18 @@ public class Main {
     }
 
     public static void main(String[] args) {
-	    Field[] fieldList;
+	    Field[] fieldList = new Field[11];
         //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
 
 
+        String selectedL = board.getPlayerDropbown("Vælg Sprog", "Dansk", "Engelsk");
+
+        if (selectedL.equals("Dansk"))
+            System.out.println("Dansk");
+        else
+            System.out.println("Ikke dansk");
+
+        initGame(fieldList);
         startGame();
 
     }
