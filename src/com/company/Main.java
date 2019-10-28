@@ -27,9 +27,14 @@ public class Main {
 
     }
 
-    private static void initFieldList(Field[] fields){
+    private static void initFieldList(Field[] fields, Translator translator){
+        int[] vals = new int[]{250, -100, 100, -20, 180, 0, -70, 60, -80, -50, 650};
         for (int i = 0; i < 11; i++){
-
+            boolean extra = false;
+            if (i == 8){
+                extra = true;
+            }
+            fields[i] = new Field(translator.txts.get(i), vals[i], extra);
         }
     }
 
@@ -58,10 +63,9 @@ public class Main {
 
     public static void main(String[] args) {
 	    Field[] fieldList = new Field[11];
+	    //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
 
-        //System.out.println(String.format("this is %ss saying hi to %s", "Frederik", "Jacob"));
-
-        Player player = new Player("1",)
+        Player player = new Player("1");
         System.out.println();
 
         String selectedL = board.getPlayerDropbown("Vælg Sprog", "Dansk", "Engelsk");
@@ -70,7 +74,8 @@ public class Main {
             System.out.println("Dansk");
         else
             System.out.println("Ikke dansk");
-        initFieldList(fieldList);
+        Translator translator = new Translator("dansk");
+        initFieldList(fieldList, translator);
         initGame(fieldList);
         startGame();
     }
