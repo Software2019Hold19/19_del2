@@ -16,3 +16,4 @@ Velkommen til %s og %s. Held og lykke på rejsen.
 Det er %ss tur. Kast med terningerne!
 Du har slået %d og %d, så du rykker til felt %d.
 %s har samlet 3000 mønter og vundet spillet. Tillykke!
+Spillere kan ikke hedde det samme!
