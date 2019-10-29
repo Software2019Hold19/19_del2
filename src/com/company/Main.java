@@ -115,15 +115,11 @@ public class Main {
         Player player1 = new Player(board.getUserString(translator.txts.get(12)));
         Player player2 = new Player(board.getUserString(translator.txts.get(13))); // FIXME: 28-10-2019 BUG!! if both players are named the same, it fucks up a big time..
 
-        if (player1.name.equals(player2.name)){
+
+        while (player2.name.equals(player1.name)) {
             board.showMessage(translator.txts.get(18));
-            while (player2.name.equals(player1.name)) {
-                player1 = new Player(board.getUserString(translator.txts.get(12)));
-                player2 = new Player(board.getUserString(translator.txts.get(13)));
-                if (player1.name.equals(player2.name)) {
-                    board.showMessage(translator.txts.get(18));
-                }
-            }
+            player1 = new Player(board.getUserString(translator.txts.get(12)));
+            player2 = new Player(board.getUserString(translator.txts.get(13)));
         }
 
 
