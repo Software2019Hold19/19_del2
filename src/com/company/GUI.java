@@ -31,20 +31,6 @@ public class GUI {
     {
         board.addPlayer(player.getGuiPlayerObj());
         board.getFields()[0].setCar(player.guiPlayerObj, true);
-
-
-        /*
-        int count = 0;
-        for (Player p : players)
-        {
-            ArrayList<GUI_Player> aList = new ArrayList<GUI_Player>(Arrays.asList(guiPlayer));
-            aList.add(new GUI_Player(p.name));
-            guiPlayer = aList.toArray();
-            board.addPlayer(guiPlayer[count]);
-
-            count++;
-        }
-         */
     }
 
     public void moveCar(int fieldNumber, Player player)
@@ -68,21 +54,10 @@ public class GUI {
         board.getFields()[fieldNumber].setDescription(txt);
     }
 
- //   public void setBackgroundColor(int fieldNumber, String txt)
- //   {
- //       board.getFields()[fieldNumber].setBackGroundColor(Color.getColor(""));
- //   }
-
     public String getPlayerDropbown(java.lang.String msg, java.lang.String... buttons)
     {
         return board.getUserSelection(msg,buttons);
     }
-
-    //Methods to use with gui user input and msg
-    // board.getUserString(String)
-    //      .getUserButtonPressed(java.lang.String msg, java.lang.String... buttons)
-    //      .board.getUserSelection(java.lang.String msg, java.lang.String... options);
-    //      .showMessage(java.lang.String msg)
 
     public void showMessage(String txt)
     {

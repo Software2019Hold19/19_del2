@@ -16,3 +16,4 @@ Welcome to player %s and player %s. Good luck on your journey.
 It is %ss turn. Roll the dice!
 You have rolled %d and %d, so you move to field %d.
 %s has gathered 3000 coins and won the game! Congratulations!
+Players cannot be named the same!

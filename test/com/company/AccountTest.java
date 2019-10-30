@@ -15,7 +15,8 @@ public class AccountTest {
     @Test
     public void testNegative() {
         Account account = new Account();
-        account.addBalance(-2000);
+        int bal = account.getBalance() + 1;
+        account.addBalance(-bal);
         assertEquals(0, account.getBalance());
     }
 }
