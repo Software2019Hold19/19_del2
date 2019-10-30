@@ -1,7 +1,9 @@
 package com.company;
 
 
+import java.awt.*;
 import java.io.IOException;
+import java.awt.Color;
 
 public class Main {
 
@@ -122,6 +124,9 @@ public class Main {
             player2 = new Player(board.getUserString(translator.txts.get(13)));
         }
 
+        // Setting the players cars to a set color to make sure tey are different.
+        player1.getGuiPlayerObj().getCar().setPrimaryColor(Color.red);
+        player2.getGuiPlayerObj().getCar().setPrimaryColor(Color.blue);
 
         // Adding players to playboard
         board.addPlayerToBoard(player1);
